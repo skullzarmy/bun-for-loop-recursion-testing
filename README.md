@@ -35,7 +35,7 @@ To run the tests and generate reports, follow these steps:
     ```
     python report.py
     ```
-    The script will create a `test_analysis_report.md` containing the analysis and save a graph depicting the performance as `test_analysis_graphs.png`.
+    The script will create a [test_analysis_report.md](./test_analysis_report.md) containing the analysis and save a graph depicting the performance as [test_analysis_graphs.png](./test_analysis_graphs.png).
 
 ## Contributing
 
