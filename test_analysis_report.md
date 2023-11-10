@@ -1,6 +1,6 @@
 # Test Analysis Report
 ## Test Parameters
-- Number of Tests: 830
+- Number of Tests: 831
 - Number of Depths: 9
 - Depths: 1, 2, 3, 4, 5, 6, 7, 8, 9
 
@@ -9,7 +9,7 @@
 
 | Depth | Average Time (ms) | Average Memory Usage (MB) |
 | --- | --- | --- |
-| 1 | 0.0147 | 1.4104 |
+| 1 | 0.0161 | 1.4089 |
 | 2 | 0.0337 | 1.5775 |
 | 3 | 0.1766 | 1.7949 |
 | 4 | 1.2596 | 2.0944 |
@@ -20,13 +20,13 @@
 | 9 | 163026.9187 | 7.8056 |
 
 ### Depth 1
-- Number of Tests: 830
+- Number of Tests: 831
 - Execution Time:
-  - Mean (Avg): 0.0147 ms
+  - Mean (Avg): 0.0161 ms
   - Max: 1.3009 ms
   - Min: 0.0011 ms
 - Memory Usage:
-  - Mean (Avg): 1.4104 MB
+  - Mean (Avg): 1.4089 MB
   - Max: 11.7891 MB
   - Min: 0.2077 MB
 
@@ -765,6 +765,7 @@
 | 1 | 0.0031 | 9.8084 |
 | 1 | 0.0047 | 10.8000 |
 | 1 | 0.0185 | 11.7891 |
+| 1 | 1.1822 | 0.2084 |
 | 1 | 0.0017 | 1.9083 |
 | 1 | 0.0017 | 1.9083 |
 | 1 | 0.0014 | 1.9083 |

@@ -266,4 +266,24 @@ async function main() {
     }
 }
 
+// parser arg called --report. if true, call python3 report.py when done
+// if false, just exit
+let report = false;
+if (process.argv[4] == "--report") {
+    report = true;
+}
+
 main();
+if (report) {
+    const { spawn } = require("child_process");
+    const pyprog = spawn("python3", ["report.py"]);
+    pyprog.stdout.on("data", function (data) {
+        console.log(data.toString());
+    });
+    pyprog.stderr.on("data", (data) => {
+        console.error(`stderr: ${data}`);
+    });
+    pyprog.on("close", (code) => {
+        console.log(`child process exited with code ${code}`);
+    });
+}
