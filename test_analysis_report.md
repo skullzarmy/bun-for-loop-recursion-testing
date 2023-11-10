@@ -1,6 +1,6 @@
 # Test Analysis Report
 ## Test Parameters
-- Number of Tests: 820
+- Number of Tests: 830
 - Number of Depths: 9
 - Depths: 1, 2, 3, 4, 5, 6, 7, 8, 9
 
@@ -9,32 +9,42 @@
 
 | Depth | Average Time (ms) | Average Memory Usage (MB) |
 | --- | --- | --- |
-| 1 | 0.0138 | 1.3527 |
-| 2 | 0.0317 | 1.5141 |
-| 3 | 0.1699 | 1.7248 |
-| 4 | 1.2358 | 2.0165 |
-| 5 | 12.0375 | 2.3179 |
-| 6 | 120.1259 | 2.4453 |
-| 7 | 1170.3443 | 3.1445 |
-| 8 | 12901.2152 | 4.9131 |
-| 9 | 129466.6741 | 8.3149 |
+| 1 | 0.0147 | 1.4104 |
+| 2 | 0.0337 | 1.5775 |
+| 3 | 0.1766 | 1.7949 |
+| 4 | 1.2596 | 2.0944 |
+| 5 | 12.2534 | 2.4069 |
+| 6 | 122.6465 | 2.5624 |
+| 7 | 1232.1892 | 3.3887 |
+| 8 | 15204.0159 | 5.4116 |
+| 9 | 163026.9187 | 7.8056 |
 
 ### Depth 1
-- Number of Tests: 820
+- Number of Tests: 830
 - Execution Time:
-  - Mean (Avg): 0.0138 ms
+  - Mean (Avg): 0.0147 ms
   - Max: 1.3009 ms
   - Min: 0.0011 ms
 - Memory Usage:
-  - Mean (Avg): 1.3527 MB
+  - Mean (Avg): 1.4104 MB
   - Max: 11.7891 MB
   - Min: 0.2077 MB
 
 <details>
-<summary>Test Results</summary>
+<summary><strong>Test Results</strong></summary>
 
 | Depth | Time (ms) | Memory Usage (MB) |
 | --- | --- | --- |
+| 1 | 0.7907 | 0.2087 |
+| 1 | 0.0044 | 2.8332 |
+| 1 | 0.0044 | 3.8281 |
+| 1 | 0.0303 | 4.8321 |
+| 1 | 0.0060 | 5.8161 |
+| 1 | 0.0042 | 6.8079 |
+| 1 | 0.0056 | 7.7959 |
+| 1 | 0.0056 | 8.7857 |
+| 1 | 0.0323 | 9.7653 |
+| 1 | 0.0065 | 10.7574 |
 | 1 | 0.0028 | 2.2105 |
 | 1 | 0.0030 | 2.2222 |
 | 1 | 0.0025 | 2.2344 |
@@ -861,21 +871,31 @@
 
 
 ### Depth 2
-- Number of Tests: 720
+- Number of Tests: 730
 - Execution Time:
-  - Mean (Avg): 0.0317 ms
+  - Mean (Avg): 0.0337 ms
   - Max: 1.9965 ms
   - Min: 0.0100 ms
 - Memory Usage:
-  - Mean (Avg): 1.5141 MB
+  - Mean (Avg): 1.5775 MB
   - Max: 11.7891 MB
   - Min: 0.2077 MB
 
 <details>
-<summary>Test Results</summary>
+<summary><strong>Test Results</strong></summary>
 
 | Depth | Time (ms) | Memory Usage (MB) |
 | --- | --- | --- |
+| 2 | 1.5912 | 0.2087 |
+| 2 | 0.0202 | 2.8332 |
+| 2 | 0.0195 | 3.8281 |
+| 2 | 0.0194 | 4.8321 |
+| 2 | 0.0194 | 5.8161 |
+| 2 | 0.0193 | 6.8079 |
+| 2 | 0.0214 | 7.7959 |
+| 2 | 0.0195 | 8.7857 |
+| 2 | 0.0194 | 9.7653 |
+| 2 | 0.0238 | 10.7574 |
 | 2 | 0.0105 | 2.2105 |
 | 2 | 0.0124 | 2.2222 |
 | 2 | 0.0102 | 2.2344 |
@@ -1602,21 +1622,31 @@
 
 
 ### Depth 3
-- Number of Tests: 620
+- Number of Tests: 630
 - Execution Time:
-  - Mean (Avg): 0.1699 ms
+  - Mean (Avg): 0.1766 ms
   - Max: 7.3989 ms
   - Min: 0.0996 ms
 - Memory Usage:
-  - Mean (Avg): 1.7248 MB
+  - Mean (Avg): 1.7949 MB
   - Max: 11.7891 MB
   - Min: 0.2077 MB
 
 <details>
-<summary>Test Results</summary>
+<summary><strong>Test Results</strong></summary>
 
 | Depth | Time (ms) | Memory Usage (MB) |
 | --- | --- | --- |
+| 3 | 4.1464 | 0.2087 |
+| 3 | 0.1938 | 2.8332 |
+| 3 | 0.1954 | 3.8281 |
+| 3 | 0.2002 | 4.8321 |
+| 3 | 0.1956 | 5.8161 |
+| 3 | 0.2003 | 6.8079 |
+| 3 | 0.1955 | 7.7959 |
+| 3 | 0.1969 | 8.7857 |
+| 3 | 0.2066 | 9.7653 |
+| 3 | 0.2002 | 10.7574 |
 | 3 | 0.1044 | 2.2105 |
 | 3 | 0.1234 | 2.2222 |
 | 3 | 0.1020 | 2.2344 |
@@ -2243,21 +2273,31 @@
 
 
 ### Depth 4
-- Number of Tests: 520
+- Number of Tests: 530
 - Execution Time:
-  - Mean (Avg): 1.2358 ms
-  - Max: 5.8622 ms
+  - Mean (Avg): 1.2596 ms
+  - Max: 7.4257 ms
   - Min: 0.9936 ms
 - Memory Usage:
-  - Mean (Avg): 2.0165 MB
+  - Mean (Avg): 2.0944 MB
   - Max: 11.7891 MB
   - Min: 0.2077 MB
 
 <details>
-<summary>Test Results</summary>
+<summary><strong>Test Results</strong></summary>
 
 | Depth | Time (ms) | Memory Usage (MB) |
 | --- | --- | --- |
+| 4 | 7.4257 | 0.2087 |
+| 4 | 1.9147 | 2.8332 |
+| 4 | 1.9204 | 3.8281 |
+| 4 | 2.0022 | 4.8321 |
+| 4 | 1.9292 | 5.8161 |
+| 4 | 1.9344 | 6.8079 |
+| 4 | 1.9354 | 7.7959 |
+| 4 | 1.9486 | 8.7857 |
+| 4 | 1.9238 | 9.7653 |
+| 4 | 2.0475 | 10.7574 |
 | 4 | 1.0200 | 2.2105 |
 | 4 | 1.2301 | 2.2222 |
 | 4 | 1.2608 | 2.2344 |
@@ -2784,21 +2824,31 @@
 
 
 ### Depth 5
-- Number of Tests: 420
+- Number of Tests: 430
 - Execution Time:
-  - Mean (Avg): 12.0375 ms
+  - Mean (Avg): 12.2534 ms
   - Max: 37.3940 ms
   - Min: 10.2269 ms
 - Memory Usage:
-  - Mean (Avg): 2.3179 MB
+  - Mean (Avg): 2.4069 MB
   - Max: 11.7891 MB
   - Min: 0.2077 MB
 
 <details>
-<summary>Test Results</summary>
+<summary><strong>Test Results</strong></summary>
 
 | Depth | Time (ms) | Memory Usage (MB) |
 | --- | --- | --- |
+| 5 | 37.1135 | 0.2087 |
+| 5 | 19.1297 | 2.8332 |
+| 5 | 19.2859 | 3.8281 |
+| 5 | 19.6103 | 4.8321 |
+| 5 | 19.3999 | 5.8161 |
+| 5 | 19.4048 | 6.8079 |
+| 5 | 19.3865 | 7.7959 |
+| 5 | 19.6562 | 8.7857 |
+| 5 | 19.4694 | 9.7653 |
+| 5 | 20.7477 | 10.7574 |
 | 5 | 11.8770 | 2.2105 |
 | 5 | 12.3682 | 2.2222 |
 | 5 | 10.3818 | 2.2344 |
@@ -3225,21 +3275,31 @@
 
 
 ### Depth 6
-- Number of Tests: 320
+- Number of Tests: 330
 - Execution Time:
-  - Mean (Avg): 120.1259 ms
-  - Max: 179.0346 ms
+  - Mean (Avg): 122.6465 ms
+  - Max: 261.2737 ms
   - Min: 107.7531 ms
 - Memory Usage:
-  - Mean (Avg): 2.4453 MB
+  - Mean (Avg): 2.5624 MB
   - Max: 11.7910 MB
   - Min: 1.8468 MB
 
 <details>
-<summary>Test Results</summary>
+<summary><strong>Test Results</strong></summary>
 
 | Depth | Time (ms) | Memory Usage (MB) |
 | --- | --- | --- |
+| 6 | 261.2737 | 1.8539 |
+| 6 | 193.1636 | 2.8355 |
+| 6 | 194.0295 | 3.8298 |
+| 6 | 197.0330 | 4.8341 |
+| 6 | 195.7536 | 5.8185 |
+| 6 | 194.6744 | 6.8101 |
+| 6 | 200.1223 | 7.7978 |
+| 6 | 198.6352 | 8.7879 |
+| 6 | 200.0451 | 9.7673 |
+| 6 | 198.3257 | 10.7604 |
 | 6 | 117.7977 | 2.2133 |
 | 6 | 125.7642 | 2.2244 |
 | 6 | 116.3782 | 2.2366 |
@@ -3566,21 +3626,31 @@
 
 
 ### Depth 7
-- Number of Tests: 120
+- Number of Tests: 130
 - Execution Time:
-  - Mean (Avg): 1170.3443 ms
-  - Max: 1426.1512 ms
+  - Mean (Avg): 1232.1892 ms
+  - Max: 2029.7771 ms
   - Min: 1099.7665 ms
 - Memory Usage:
-  - Mean (Avg): 3.1445 MB
+  - Mean (Avg): 3.3887 MB
   - Max: 11.7997 MB
-  - Min: 1.8653 MB
+  - Min: 1.8635 MB
 
 <details>
-<summary>Test Results</summary>
+<summary><strong>Test Results</strong></summary>
 
 | Depth | Time (ms) | Memory Usage (MB) |
 | --- | --- | --- |
+| 7 | 1948.1085 | 1.8635 |
+| 7 | 2029.7771 | 2.8449 |
+| 7 | 1940.6357 | 3.8385 |
+| 7 | 1987.3104 | 4.8446 |
+| 7 | 1950.4889 | 5.8290 |
+| 7 | 2004.5107 | 6.8201 |
+| 7 | 1967.4853 | 7.8081 |
+| 7 | 1968.5706 | 8.7976 |
+| 7 | 1971.6060 | 9.7761 |
+| 7 | 1974.7816 | 10.7687 |
 | 7 | 1209.9125 | 2.2222 |
 | 7 | 1201.0566 | 2.2344 |
 | 7 | 1122.3985 | 2.2465 |
@@ -3707,21 +3777,31 @@
 
 
 ### Depth 8
-- Number of Tests: 20
+- Number of Tests: 30
 - Execution Time:
-  - Mean (Avg): 12901.2152 ms
-  - Max: 13202.7573 ms
+  - Mean (Avg): 15204.0159 ms
+  - Max: 20507.9253 ms
   - Min: 12590.3901 ms
 - Memory Usage:
-  - Mean (Avg): 4.9131 MB
+  - Mean (Avg): 5.4116 MB
   - Max: 11.8899 MB
   - Min: 1.9528 MB
 
 <details>
-<summary>Test Results</summary>
+<summary><strong>Test Results</strong></summary>
 
 | Depth | Time (ms) | Memory Usage (MB) |
 | --- | --- | --- |
+| 8 | 19119.6958 | 1.9539 |
+| 8 | 19424.7579 | 2.9365 |
+| 8 | 19386.9771 | 3.9303 |
+| 8 | 19805.9660 | 4.9299 |
+| 8 | 19912.2637 | 5.9225 |
+| 8 | 19968.0107 | 6.9083 |
+| 8 | 19863.6173 | 7.8958 |
+| 8 | 20406.6365 | 8.8843 |
+| 8 | 19700.3222 | 9.8659 |
+| 8 | 20507.9253 | 10.8595 |
 | 8 | 12834.6263 | 1.9528 |
 | 8 | 12941.8222 | 2.0532 |
 | 8 | 12712.9531 | 2.1547 |
@@ -3748,21 +3828,31 @@
 
 
 ### Depth 9
-- Number of Tests: 10
+- Number of Tests: 20
 - Execution Time:
-  - Mean (Avg): 129466.6741 ms
-  - Max: 132444.8602 ms
+  - Mean (Avg): 163026.9187 ms
+  - Max: 202189.5296 ms
   - Min: 127639.2988 ms
 - Memory Usage:
-  - Mean (Avg): 8.3149 MB
+  - Mean (Avg): 7.8056 MB
   - Max: 12.7907 MB
-  - Min: 3.8477 MB
+  - Min: 2.8332 MB
 
 <details>
-<summary>Test Results</summary>
+<summary><strong>Test Results</strong></summary>
 
 | Depth | Time (ms) | Memory Usage (MB) |
 | --- | --- | --- |
+| 9 | 194142.7654 | 2.8332 |
+| 9 | 195450.4072 | 3.8281 |
+| 9 | 185511.9311 | 4.8321 |
+| 9 | 195219.1396 | 5.8161 |
+| 9 | 198117.4548 | 6.8079 |
+| 9 | 198187.9411 | 7.7959 |
+| 9 | 197511.6674 | 8.7857 |
+| 9 | 199726.6734 | 9.7653 |
+| 9 | 199814.1234 | 10.7574 |
+| 9 | 202189.5296 | 11.7415 |
 | 9 | 127639.2988 | 3.8477 |
 | 9 | 128637.5556 | 4.8400 |
 | 9 | 128510.2128 | 5.8366 |

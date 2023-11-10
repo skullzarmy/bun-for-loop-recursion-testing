@@ -86,7 +86,7 @@ def analyze_results(all_results):
             report_file.write(report)
 
              # Writing detailed test results for each depth
-            table = "<details>\n<summary>Test Results</summary>\n\n"
+            table = "<details>\n<summary><strong>Test Results</strong></summary>\n\n"
             table += "| Depth | Time (ms) | Memory Usage (MB) |\n| --- | --- | --- |\n"
             table += "\n".join(
                 f"| {depth} | {test['executionTime']:.4f} | {test['memoryUsage']:.4f} |"
