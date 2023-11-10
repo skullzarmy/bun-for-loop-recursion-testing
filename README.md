@@ -13,6 +13,7 @@ The purpose of this project is to assess the performance of recursive for loops 
 
 -   `test.ts`: The TypeScript script used for generating test data within the bun.sh environment.
 -   `report.py`: The Python script for analyzing test data and producing reports.
+    -   **Results:** [test_analysis_report.md](./test_analysis_report.md)
 
 ## Getting Started
 
