@@ -23,8 +23,11 @@ To run the tests and generate reports, follow these steps:
 2. Execute the TypeScript script to generate test data:
 
     ```
-    bun test.ts
+    bun test.ts [testCountArg] [depthCountArg]
     ```
+
+    - `testCountArg`: (Optional) Defines the number of tests to run. Default is 1.
+    - `depthCountArg`: (Optional) Specifies the depth of nested loops to test. Default is 8.
 
     This script will simulate recursive for loops and store the results in JSON format.
 
