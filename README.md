@@ -1,6 +1,6 @@
 # Recursive Loop Testing for bun.sh
 
-This repository contains a SoCalTechLab.com project aimed at testing recursive for loops in [bun.sh](https://bun.sh), a fast all-in-one JavaScript runtime.
+This repository contains a [SoCalTechLab.com](https://socaltechlab.com/) project aimed at testing recursive for loops in [bun.sh](https://bun.sh), a fast all-in-one JavaScript runtime.
 
 ## Overview
 
