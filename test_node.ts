@@ -1,5 +1,6 @@
-import { file } from "bun";
-import { randomBytes } from "bun:crypto";
+const fs = require("fs").promises;
+const crypto = require("crypto");
+const { spawn } = require("child_process");
 
 /**
  * Simulates a computation that would typically require deep recursion by using an iterative approach.
@@ -83,7 +84,7 @@ function runTest(depth, range, workload) {
  * @returns {string} - A filename string unique to the test parameters, combining test details and a random string.
  */
 function generateUniqueFilename(testCount, depthCount) {
-    const randomString = randomBytes(8).toString("hex");
+    const randomString = crypto.randomBytes(8).toString("hex");
     return `test_results_${testCount}x${depthCount}_${randomString}.json`;
 }
 
@@ -229,21 +230,16 @@ async function main() {
     for (const testCount of testCounts) {
         for (const depthCount of depthCounts) {
             const outputFileName = generateUniqueFilename(testCount, depthCount);
-            const fileSink = file(outputFileName).writer({ highWaterMark: 1024 * 1024 });
 
-            // Initialize an object to hold the test results, segmented by iteration number
             const jsonStructure = {
-                environment: "bun.sh",
+                environment: "node.js", // Add environment designation
                 test_count: testCount,
                 depth_count: depthCount,
                 test_results: {},
             };
 
             for (let i = 0; i < testCount; i++) {
-                // Define the range dynamically if needed, based on depth or other factors
                 const range = 10; // This value can be changed to simulate different loop ranges
-
-                // Initialize the array for this iteration's results
                 jsonStructure.test_results[`iteration_${i + 1}`] = [];
 
                 for (let depth = 1; depth <= depthCount; depth++) {
@@ -256,9 +252,7 @@ async function main() {
             }
 
             try {
-                // Writing the results in a prettified JSON format for readability
-                await fileSink.write(JSON.stringify(jsonStructure, null, 2));
-                await fileSink.end();
+                await fs.writeFile(outputFileName, JSON.stringify(jsonStructure, null, 2));
                 console.log(`Results saved to ${outputFileName}`);
             } catch (error) {
                 console.error(`Error writing results to file: ${error.message}`);
@@ -267,24 +261,28 @@ async function main() {
     }
 }
 
-// parser arg called --report. if true, call python3 report.py when done
-// if false, just exit
-let report = false;
-if (process.argv[4] == "--report") {
-    report = true;
-}
+/**
+ * Prompts the user for input and returns the response.
+ *
+ * @param {string} prompt - The prompt to display to the user.
+ * @returns {Promise<string>} - The user's response.
+ */
+let report = process.argv.includes("--report");
 
-main();
-if (report) {
-    const { spawn } = require("child_process");
-    const pyprog = spawn("python3", ["report.py"]);
-    pyprog.stdout.on("data", function (data) {
-        console.log(data.toString());
-    });
-    pyprog.stderr.on("data", (data) => {
-        console.error(`stderr: ${data}`);
-    });
-    pyprog.on("close", (code) => {
-        console.log(`child process exited with code ${code}`);
-    });
-}
+main().then(() => {
+    if (report) {
+        const pyprog = spawn("python3", ["report.py"]);
+
+        pyprog.stdout.on("data", (data) => {
+            console.log(data.toString());
+        });
+
+        pyprog.stderr.on("data", (data) => {
+            console.error(`stderr: ${data}`);
+        });
+
+        pyprog.on("close", (code) => {
+            console.log(`child process exited with code ${code}`);
+        });
+    }
+});
