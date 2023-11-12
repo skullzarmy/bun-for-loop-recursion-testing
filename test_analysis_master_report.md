@@ -2,11 +2,11 @@
 
 ### Bun.sh
 
-[test_analysys_report_bun_sh.md](./test_analysys_report_bun_sh.md)
+[test_analysys_report_bun.sh.md](./test_analysys_report_bun.sh.md)
 
 ### Node.js
 
-[test_analysys_report_node_js.md](./test_analysis_report_node.js.md)
+[test_analysys_report_node.js.md](./test_analysis_report_node.js.md)
 
 ---
 
