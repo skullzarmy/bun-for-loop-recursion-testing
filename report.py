@@ -91,6 +91,11 @@ def create_master_report(depth_data_by_env):
     master_report_filename = 'test_analysis_master_report.md'
     with open(master_report_filename, 'w') as master_report:
         master_report.write("# Master Test Analysis Report\n\n")
+        # add links to all env reports
+        master_report.write("## Environment Reports\n\n")
+        for env in depth_data_by_env.keys():
+            master_report.write(f"- [test_analysis_report_{env}.md](test_analysis_report_{env}.md)\n")
+
         master_report.write("## Comparison of Environments\n\n")
         master_report.write("![Comparison Graphs](test_analysis_comparison_graphs.png)\n\n")
         for depth in sorted(next(iter(depth_data_by_env.values())).keys()):
