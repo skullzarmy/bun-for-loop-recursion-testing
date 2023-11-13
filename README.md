@@ -2,6 +2,10 @@
 
 This repository contains a [SoCalTechLab.com](https://socaltechlab.com/) project aimed at testing recursive for loops in [bun.sh](https://bun.sh), a purportedly fast all-in-one JavaScript runtime.
 
+[![SoCalTechLab.com logo - click to visit](./sctl_xs_rounded_white_text.webp)](https://socaltechlab.com/?rel=bunRecursionGitHubRepo)
+
+[a SoCalTechLab.com project](https://socaltechlab.com/?rel=bunRecursionGitHubRepo)
+
 ## Overview
 
 The purpose of this project is to assess the performance of recursive for loops in bun.sh, versus standard node.js, by simulating deep recursion with iterative approaches. The project consists of two main components:
